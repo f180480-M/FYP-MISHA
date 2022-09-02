@@ -1,0 +1,96 @@
+.new{
+    display: flex;
+    width: 100%;
+
+    .newContainer{
+        flex: 6;
+
+
+        .top,.bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+
+
+            h1{
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            // .left{
+            //     flex: 1;
+            //     text-align: center;
+
+            //     img{
+            //         height: 170px;
+            //         width: 170px;
+            //         border-radius: 50%;
+            //         object-fit: cover;
+            //     }
+            // }
+
+            .right{
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px;
+
+                    .formInput{
+                        width: 40%;
+                        font-size: 22px;
+
+
+                        select{
+                            width: 100%;
+                            font-size: 18px;
+
+                        }
+
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+
+                        .icon{
+                            cursor: pointer;
+                        }
+
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                        }
+                    }
+
+                    .btnDiv{
+                        flex-basis:100%;
+                        align-items: center;    
+
+                        button{
+                            width: 30%;
+                            margin-top: 10px;
+                            padding: 10px;
+                            border: none;
+                            background-color: teal;
+                            color: white;
+                            font-weight: bold;
+                            cursor: pointer;
+
+                            &:disabled{
+                                background-color: rgba(3, 92, 92, 0.322);
+                                cursor: not-allowed;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
